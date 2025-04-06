@@ -1,5 +1,6 @@
 public class Principal {
     public static void main(String[] args) {
+        //Primera película
         Pelicula miPelicula = new Pelicula();
         miPelicula.nombre = "Encanto";
         miPelicula.fechaDeLanzamiento = 2021;
@@ -13,10 +14,24 @@ public class Principal {
         System.out.println(miPelicula.totalDeLasEvaluaciones);
         System.out.println(miPelicula.calculaMedia());
 
+        //Segunda película
         Pelicula otraPelicula = new Pelicula();
         otraPelicula.nombre = "Matrix";
         otraPelicula.fechaDeLanzamiento = 1994;
-
 //        otraPelicula.muestraFichaTecnica();
+
+        //Tercera Película
+        Pelicula tercerPelicula = new Pelicula();
+        tercerPelicula.nombre = "La famila del futuro";
+        tercerPelicula.fechaDeLanzamiento = 2007;
+        tercerPelicula.duracionEnMinutos = 95;
+        tercerPelicula.incluidoEnElPlan = true;
+
+        tercerPelicula.muestraFichaTecnica();
+        tercerPelicula.evalua(10);
+        tercerPelicula.evalua(10);
+        tercerPelicula.evalua(10);
+
+        System.out.println("Media de evaluaciones de la película: " + tercerPelicula.totalDeLasEvaluaciones);
   }
 }
