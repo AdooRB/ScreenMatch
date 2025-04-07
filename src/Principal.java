@@ -10,8 +10,8 @@ public class Principal {
        miPelicula.evalua(7.8);
        miPelicula.evalua(10);
 
-        System.out.println(miPelicula.sumaDeLasEvaluaciones);
-        System.out.println(miPelicula.totalDeLasEvaluaciones);
+
+        System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
 
         //Segunda película
@@ -32,6 +32,6 @@ public class Principal {
         tercerPelicula.evalua(10);
         tercerPelicula.evalua(10);
 
-        System.out.println("Media de evaluaciones de la película: " + tercerPelicula.totalDeLasEvaluaciones);
+        System.out.println("Media de evaluaciones de la película: " + tercerPelicula.calculaMedia());
   }
 }
