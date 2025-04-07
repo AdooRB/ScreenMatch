@@ -1,17 +1,50 @@
 package com.aluracursos.screenmatch.modelos;
 
 public class Pelicula {
-    String nombre;
-    int fechaDeLanzamiento;
-    int duracionEnMinutos;
-    boolean incluidoEnElPlan;
+    private String nombre;
+    private int fechaDeLanzamiento;
+    private int duracionEnMinutos;
+    private boolean incluidoEnElPlan;
     private double sumaDeLasEvaluaciones;
     private int totalDeLasEvaluaciones;
-    int getTotalDeLasEvaluaciones(){
+
+    public int getTotalDeLasEvaluaciones(){
         return totalDeLasEvaluaciones;
     }
 
-    void muestraFichaTecnica(){
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getFechaDeLanzamiento() {
+        return fechaDeLanzamiento;
+    }
+
+    public int getDuracionEnMinutos() {
+        return duracionEnMinutos;
+    }
+
+    public boolean isIncluidoEnElPlan() {
+        return incluidoEnElPlan;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setFechaDeLanzamiento(int fechaDeLanzamiento) {
+        this.fechaDeLanzamiento = fechaDeLanzamiento;
+    }
+
+    public void setDuracionEnMinutos(int duracionEnMinutos) {
+        this.duracionEnMinutos = duracionEnMinutos;
+    }
+
+    public void setIncluidoEnElPlan(boolean incluidoEnElPlan) {
+        this.incluidoEnElPlan = incluidoEnElPlan;
+    }
+
+    public void muestraFichaTecnica(){
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
         System.out.println("El nombre de la película es:  " + nombre);
         System.out.println("Su fecha de lanzamiento es:  " + fechaDeLanzamiento);
@@ -19,12 +52,12 @@ public class Pelicula {
         System.out.println(" ");
     }
 
-    void evalua(double nota){
+    public void evalua(double nota){
         sumaDeLasEvaluaciones += nota;
         totalDeLasEvaluaciones++;
     }
 
-    double calculaMedia(){
+    public double calculaMedia(){
         return sumaDeLasEvaluaciones / totalDeLasEvaluaciones;
     }
 }
