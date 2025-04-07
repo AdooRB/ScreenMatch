@@ -1,3 +1,5 @@
+package com.aluracursos.screenmatch.modelos;
+
 public class Pelicula {
     String nombre;
     int fechaDeLanzamiento;
