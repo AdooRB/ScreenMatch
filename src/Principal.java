@@ -4,12 +4,14 @@ public class Principal {
     public static void main(String[] args) {
         //Primera película
         Pelicula miPelicula = new Pelicula();
-        miPelicula.nombre = "Encanto";
-        miPelicula.fechaDeLanzamiento = 2021;
-        miPelicula.duracionEnMinutos = 120;
+        miPelicula.setNombre("Encanto");
+        miPelicula.setFechaDeLanzamiento(2021);
+        miPelicula.setDuracionEnMinutos(120);
+        miPelicula.setIncluidoEnElPlan(true);
 
        miPelicula.muestraFichaTecnica();
        miPelicula.evalua(7.8);
+       miPelicula.evalua(10);
        miPelicula.evalua(10);
 
 
