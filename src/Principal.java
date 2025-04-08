@@ -1,3 +1,4 @@
+import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
@@ -26,20 +27,28 @@ public class Principal {
         casaDragon.setMinutosPorEpisodio(50);
         casaDragon.setEpisodiosPorTemporada(10);
         casaDragon.muestraFichaTecnica();
-        casaDragon.setDuracionEnMinutos(10);
         System.out.println(casaDragon.getDuracionEnMinutos());
-        //Segunda película
-//        com.aluracursos.screenmatch.modelos.Pelicula otraPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
-//        otraPelicula.nombre = "Matrix";
-//        otraPelicula.fechaDeLanzamiento = 1994;
-////        otraPelicula.muestraFichaTecnica();
-//
+
+        //        Segunda película
+        Pelicula otraPelicula = new Pelicula();
+        otraPelicula.setNombre("Matrix");
+        otraPelicula.setFechaDeLanzamiento(1994);
+        otraPelicula.setDuracionEnMinutos(180);
+        otraPelicula.muestraFichaTecnica();
+
+        CalculadoraDeTiempo calculadora = new CalculadoraDeTiempo();
+        calculadora.incluye(miPelicula);
+        calculadora.incluye(casaDragon);
+        calculadora.incluye(otraPelicula);
+        System.out.println("Tiempo necesario para ver titulos favoritos estas vaciones: " + calculadora.getTiempoTotal() + " minutos.");
+
+
 //        //Tercera Película
-//        com.aluracursos.screenmatch.modelos.Pelicula tercerPelicula = new com.aluracursos.screenmatch.modelos.Pelicula();
-//        tercerPelicula.nombre = "La famila del futuro";
-//        tercerPelicula.fechaDeLanzamiento = 2007;
-//        tercerPelicula.duracionEnMinutos = 95;
-//        tercerPelicula.incluidoEnElPlan = true;
+//        Pelicula tercerPelicula = new Pelicula();
+//        tercerPelicula.setNombre("La famila del futuro");
+//        tercerPelicula.setFechaDeLanzamiento(2007);
+//        tercerPelicula.setDuracionEnMinutos(180);
+//        tercerPelicula.setIncluidoEnElPlan(true);
 //
 //        tercerPelicula.muestraFichaTecnica();
 //        tercerPelicula.evalua(10);
