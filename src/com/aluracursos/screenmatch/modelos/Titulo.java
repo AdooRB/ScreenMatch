@@ -48,7 +48,7 @@ public class Titulo {
         System.out.println("-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*");
         System.out.println("El nombre de la película es:  " + nombre);
         System.out.println("Su fecha de lanzamiento es:  " + fechaDeLanzamiento);
-        System.out.println("Duración en minutos es:  " + duracionEnMinutos);
+        System.out.println("Duración en minutos es:  " + getDuracionEnMinutos());
         System.out.println(" ");
     }
 
