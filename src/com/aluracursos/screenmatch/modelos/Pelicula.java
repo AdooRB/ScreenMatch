@@ -1,6 +1,8 @@
 package com.aluracursos.screenmatch.modelos;
 
-public class Pelicula extends Titulo {
+import com.aluracursos.screenmatch.calculos.Clasificacion;
+
+public class Pelicula extends Titulo implements Clasificacion {
     private String directo;
 
     public void setDirecto(String directo) {
@@ -11,5 +13,8 @@ public class Pelicula extends Titulo {
         return directo;
     }
 
-
+    @Override
+    public int getClasificacion() {
+        return (int) calculaMedia() / 2;
+    }
 }
