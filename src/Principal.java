@@ -4,6 +4,8 @@ import com.aluracursos.screenmatch.modelos.Episodio;
 import com.aluracursos.screenmatch.modelos.Pelicula;
 import com.aluracursos.screenmatch.modelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         //Primera película
@@ -66,5 +68,20 @@ public class Principal {
 //        tercerPelicula.evalua(10);
 //
 //        System.out.println("Media de evaluaciones de la película: " + tercerPelicula.calculaMedia());
+
+        var peliculaDeAldo = new Pelicula();
+        peliculaDeAldo.setNombre("El señor de los anillos");
+        peliculaDeAldo.setDuracionEnMinutos(180);
+        peliculaDeAldo.setFechaDeLanzamiento(2001);
+
+        ArrayList<Pelicula> listaDePelicula = new ArrayList<>();
+        listaDePelicula.add(peliculaDeAldo);
+        listaDePelicula.add(miPelicula);
+        listaDePelicula.add(otraPelicula);
+
+        System.out.println("Tamaño de lista: " + listaDePelicula.size());
+        System.out.println("La primera pelicula es: " + listaDePelicula.getFirst().getNombre());
+        System.out.println(listaDePelicula);
+
   }
 }
