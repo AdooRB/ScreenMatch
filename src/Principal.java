@@ -9,9 +9,7 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
         //Primera película
-        Pelicula miPelicula = new Pelicula();
-        miPelicula.setNombre("Encanto");
-        miPelicula.setFechaDeLanzamiento(2021);
+        Pelicula miPelicula = new Pelicula("Encanto", 2021);
         miPelicula.setDuracionEnMinutos(120);
         miPelicula.setIncluidoEnElPlan(true);
 
@@ -24,9 +22,7 @@ public class Principal {
         System.out.println(miPelicula.getTotalDeLasEvaluaciones());
         System.out.println(miPelicula.calculaMedia());
 
-        Serie casaDragon = new Serie();
-        casaDragon.setNombre("La casa del dragón");
-        casaDragon.setFechaDeLanzamiento(2022);
+        Serie casaDragon = new Serie("La casa del Dragón", 2022);
         casaDragon.setTemporada(1);
         casaDragon.setMinutosPorEpisodio(50);
         casaDragon.setEpisodiosPorTemporada(10);
@@ -34,9 +30,7 @@ public class Principal {
         System.out.println(casaDragon.getDuracionEnMinutos());
 
         //        Segunda película
-        Pelicula otraPelicula = new Pelicula();
-        otraPelicula.setNombre("Matrix");
-        otraPelicula.setFechaDeLanzamiento(1994);
+        Pelicula otraPelicula = new Pelicula("Matrix",1994);
         otraPelicula.setDuracionEnMinutos(180);
         otraPelicula.muestraFichaTecnica();
 
@@ -69,10 +63,8 @@ public class Principal {
 //
 //        System.out.println("Media de evaluaciones de la película: " + tercerPelicula.calculaMedia());
 
-        var peliculaDeAldo = new Pelicula();
-        peliculaDeAldo.setNombre("El señor de los anillos");
+        var peliculaDeAldo = new Pelicula("El señor de los anillos", 2001);
         peliculaDeAldo.setDuracionEnMinutos(180);
-        peliculaDeAldo.setFechaDeLanzamiento(2001);
 
         ArrayList<Pelicula> listaDePelicula = new ArrayList<>();
         listaDePelicula.add(peliculaDeAldo);
@@ -80,8 +72,10 @@ public class Principal {
         listaDePelicula.add(otraPelicula);
 
         System.out.println("Tamaño de lista: " + listaDePelicula.size());
-        System.out.println("La primera pelicula es: " + listaDePelicula.getFirst().getNombre());
+        System.out.println("La primera pelicula es: " + listaDePelicula.get(2).getNombre());
         System.out.println(listaDePelicula);
+
+        System.out.println(listaDePelicula.get(2).toString());
 
   }
 }
