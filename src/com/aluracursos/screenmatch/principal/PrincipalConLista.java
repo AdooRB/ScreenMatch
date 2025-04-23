@@ -5,6 +5,7 @@ import com.aluracursos.screenmatch.modelos.Serie;
 import com.aluracursos.screenmatch.modelos.Titulo;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PrincipalConLista {
     public static void main(String[] args) {
@@ -36,5 +37,15 @@ public class PrincipalConLista {
                 System.out.println(pelicula.getClasificacion());
             }
         }
+        ArrayList<String> listaDeArtistas = new ArrayList<>();
+        listaDeArtistas.add("Penélope Cruz");
+        listaDeArtistas.add("Antonio Banderas");
+        listaDeArtistas.add("Ricado Darín");
+        System.out.println(listaDeArtistas);
+
+        Collections.sort(listaDeArtistas);
+        System.out.println("Lista de artistas oredenada: " + listaDeArtistas);
+
+
     }
 }
