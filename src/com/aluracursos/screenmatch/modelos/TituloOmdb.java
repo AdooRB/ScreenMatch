@@ -1,4 +1,4 @@
 package com.aluracursos.screenmatch.modelos;
 
-public record TituloOmdb() {
+public record TituloOmdb(String title, String year, String runtime) {
 }
