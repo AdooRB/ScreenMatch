@@ -1,0 +1,26 @@
+[
+  {
+    "Nombre": "Salsa",
+    "FechaDeLanzamiento": 1988,
+    "DuracionEnMinutos": 97,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluaciones": 0.0,
+    "TotalDeLasEvaluaciones": 0
+  },
+  {
+    "Nombre": "Rango",
+    "FechaDeLanzamiento": 2011,
+    "DuracionEnMinutos": 107,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluaciones": 0.0,
+    "TotalDeLasEvaluaciones": 0
+  },
+  {
+    "Nombre": "Elektra",
+    "FechaDeLanzamiento": 2005,
+    "DuracionEnMinutos": 97,
+    "IncluidoEnElPlan": false,
+    "SumaDeLasEvaluaciones": 0.0,
+    "TotalDeLasEvaluaciones": 0
+  }
+]
